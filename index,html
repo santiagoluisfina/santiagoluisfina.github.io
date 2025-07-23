@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Luis Fina - Desarrollador</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f6f9fc;
+        color: #333;
+      }
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      section {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 10px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Santiago Luis Fina</h1>
+      <p>Desarrollador Android | Google AdMob | Optimización de monetización móvil</p>
+    </header>
+
+    <section>
+      <h2>📱 Apps destacadas en Google Play</h2>
+      <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=com.systango.nivbible" target="_blank">The Holy Bible: NIV Version</a></li>
+        <!-- Agregá más apps si querés -->
+      </ul>
+
+      <h2>🔗 Redes y contacto</h2>
+      <ul>
+        <li>Email: <a href="mailto:santiagofina@gmail.com">santiagofina@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/santiagoluisfina" target="_blank">santiagoluisfina</a></li>
+        <li>LinkedIn (opcional): <a href="#" target="_blank">Tu perfil</a></li>
+      </ul>
+
+      <h2>📄 Verificación AdMob</h2>
+      <p>Este sitio también aloja mi archivo <code>app-ads.txt</code> para la verificación de mis aplicaciones en AdMob.</p>
+      <p><a href="/app-ads.txt">Ver archivo app-ads.txt</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Santiago Luis Fina. Todos los derechos reservados.
+    </footer>
+  </body>
+</html>
