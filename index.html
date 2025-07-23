@@ -6,12 +6,26 @@
   <title>Santiago Luis Fina - Desarrollador</title>
   <style>
     body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; margin: 0; line-height: 1.6; }
-    header { background: #1a73e8; color: white; padding: 2rem 1rem; text-align: center; }
+    header {
+  background: #000; /* Fondo negro como pediste */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px; /* << Bordes redondeados del header */
+  margin: 1rem;
+  box-shadow: none; /* << Elimina marco azul si se generaba por sombra */
+}
     main { max-width: 900px; margin: auto; padding: 1rem; }
     section { margin-bottom: 2rem; }
     .apps { display: flex; flex-wrap: wrap; gap: 1rem; }
     .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem; flex: 1 1 250px; text-align: center; }
-    .card img { width: 64px; height: 64px; object-fit: contain; margin-bottom: 0.5rem; }
+    .card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  border-radius: 12px; /* << Bordes redondeados para íconos */
+}
     .card a { text-decoration: none; color: #1a73e8; font-weight: bold; }
     ul { list-style: none; padding-left: 0; }
     li { margin-bottom: 0.5rem; }
