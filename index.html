@@ -1,129 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Santiago Luis Fina - Desarrollador</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; margin: 0; line-height: 1.6; }
-    header {
-  background: #000; /* Fondo negro como pediste */
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-  border-radius: 12px; /* << Bordes redondeados del header */
-  margin: 1rem;
-  box-shadow: none; /* << Elimina marco azul si se generaba por sombra */
-}
-    main { max-width: 900px; margin: auto; padding: 1rem; }
-    section { margin-bottom: 2rem; }
-    .apps { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem; flex: 1 1 250px; text-align: center; }
-    .card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-  border-radius: 12px; /* << Bordes redondeados para íconos */
-}
-    .card a { text-decoration: none; color: #1a73e8; font-weight: bold; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin-bottom: 0.5rem; }
-    footer { text-align: center; padding: 1rem; font-size: 0.85rem; color: #888; background: #eee; }
-    @media (max-width: 600px) { .card { flex: 1 1 100%; } }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Luis Fina - Desarrollador</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #000;
+            /* Fondo negro como pediste */
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 12px;
+            /* << Bordes redondeados del header */
+            margin: 1rem;
+            box-shadow: none;
+            /* << Elimina marco azul si se generaba por sombra */
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .apps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+            /* Zoom suave */
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.85rem;
+            color: #888;
+            background: #eee;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-  <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; background: #000; color: white; padding: 1.5rem;">
-    <img src="https://play-lh.googleusercontent.com/CJgcV6iPKOT94GNYmxjSiAEWqtdCij0-xCYw1a6jQUOhaWELVlMmKLQmRdYyKiotjAY=s94-rw" alt="Logo Santiago" style="width: 64px; height: 64px; margin-right: 1rem; border-radius: 8px;">
-    <div>
-      <h1 style="margin: 0;">Santiago Luis Fina</h1>
-      <p style="margin: 0.5rem 0 0;">Desarrollador independiente de apps móviles</p>
-    </div>
-  </div>
-  </header>
-  <main>
-    <section>
-      <h2 id="apps_title"></h2>
-      <div class="apps">
-        <div class="card">
-          <img src="https://play-lh.googleusercontent.com/uqlPfxZGrZcIPFLA7VA0_ETN50doshD9v8x9UPgErEFWg6EcSnPvvFurZPJ5RITdSRk=w240-h480-rw" alt="Sagrada Biblia Católica">
-          <p>Sagrada Biblia Católica</p>
-          <a href="https://play.google.com/store/apps/details?id=com.systango.bibliacatolica" target="_blank">Ver en Google Play</a>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; background: #000; color: white; padding: 1.5rem;">
+            <img src="https://play-lh.googleusercontent.com/CJgcV6iPKOT94GNYmxjSiAEWqtdCij0-xCYw1a6jQUOhaWELVlMmKLQmRdYyKiotjAY=s94-rw" alt="Logo Santiago" style="width: 64px; height: 64px; margin-right: 1rem; border-radius: 8px;">
+            <div>
+                <h1 style="margin: 0;">Santiago Luis Fina</h1>
+                <p style="margin: 0.5rem 0 0;">Desarrollador independiente de apps móviles</p>
+            </div>
         </div>
-      
-        <div class="card">
-          <img src="https://play-lh.googleusercontent.com/P0zY2DxLa4jB-1DgEcn2CXAAJhYl69BTwLpj4PFh7ml3crInNrboWtlQvjmd59iRQA=w240-h480-rw" alt="Martín Fierro">
-          <p>Martín Fierro</p>
-          <a href="https://play.google.com/store/apps/details?id=com.systango.martinfierrobook" target="_blank">Ver en Google Play</a>
-        </div>
-      
-        <div class="card">
-          <img src="https://play-lh.googleusercontent.com/sNeOB2FERHE6Oq4hQeChFuXSbPPP_O0SahpCa6MkIRSbZwj6KJV5fuiGNJMpRT-l9fM=w240-h480-rw" alt="TangooSearch">
-          <p>TangooSearch</p>
-          <a href="https://play.google.com/store/apps/details?id=com.systango.TanGooSearch" target="_blank">Ver en Google Play</a>
-        </div>
-      </div>
-    </section>
+    </header>
+    <main>
+        <section>
+            <h2 id="apps_title"></h2>
+            <div class="apps">
+                <div class="card">
+                    <a href="https://play.google.com/store/apps/details?id=com.systango.bibliacatolica" target="_blank">
+                        <img src="https://play-lh.googleusercontent.com/uqlPfxZGrZcIPFLA7VA0_ETN50doshD9v8x9UPgErEFWg6EcSnPvvFurZPJ5RITdSRk=w240-h480-rw" alt="Sagrada Biblia Católica">
+                    </a>
+                    <p>Sagrada Biblia Católica</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.systango.bibliacatolica" target="_blank">Ver en Google Play</a>
+                </div>
 
-    <section>
-      <h2 id="contacto_title"></h2>
-      <ul>
-        <li>Email: <a href="mailto:santiagofina@gmail.com">santiagofina@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/santiagoluisfina" target="_blank">santiagoluisfina</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/santiagofina/" target="_blank">Santiago Fina</a></li>
-      </ul>
-    </section>
+                <div class="card">
+                    <img src="https://play-lh.googleusercontent.com/P0zY2DxLa4jB-1DgEcn2CXAAJhYl69BTwLpj4PFh7ml3crInNrboWtlQvjmd59iRQA=w240-h480-rw" alt="Martín Fierro">
+                    <p>Martín Fierro</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.systango.martinfierrobook" target="_blank">Ver en Google Play</a>
+                </div>
 
-    <section>
-      <h2 id="adm_title"></h2>
-      <p id="adm_text"></p>
-      <p><a href="/app-ads.txt">app-ads.txt</a></p>
-    </section>
-  </main>
+                <div class="card">
+                    <img src="https://play-lh.googleusercontent.com/sNeOB2FERHE6Oq4hQeChFuXSbPPP_O0SahpCa6MkIRSbZwj6KJV5fuiGNJMpRT-l9fM=w240-h480-rw" alt="TangooSearch">
+                    <p>TangooSearch</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.systango.TanGooSearch" target="_blank">Ver en Google Play</a>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    &copy; 2025 Santiago Luis Fina.
-  </footer>
+        <section>
+            <h2 id="contacto_title"></h2>
+            <ul>
+                <li>Email: <a href="mailto:santiagofina@gmail.com">santiagofina@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/santiagoluisfina" target="_blank">santiagoluisfina</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/santiagofina/" target="_blank">Santiago Fina</a></li>
+            </ul>
+        </section>
 
-  <script>
-    const lang = navigator.language.slice(0,2);
-    const texts = {
-      es: {
-        nombre: "Santiago Luis Fina",
-        descripcion: "Desarrollador independiente de apps móviles",
-        apps_title: "📱 Apps destacadas",
-        play_link: "Ver en Google Play",
-        contacto_title: "🔗 Contacto y redes",
-        adm_title: "📄 Verificación AdMob",
-        adm_text: "Este sitio aloja el archivo app-ads.txt para mis apps móviles."
-      },
-      en: {
-        nombre: "Santiago Luis Fina",
-        descripcion: "Independent mobile app developer",
-        apps_title: "📱 Featured apps",
-        play_link: "View on Google Play",
-        contacto_title: "🔗 Contact & socials",
-        adm_title: "📄 AdMob verification",
-        adm_text: "This site hosts the app-ads.txt file for my mobile apps."
-      },
-      it: {
-        nombre: "Santiago Luis Fina",
-        descripcion: "Sviluppatore indipendente di app mobili",
-        apps_title: "📱 App in evidenza",
-        play_link: "Vedi su Google Play",
-        contacto_title: "🔗 Contatti e social",
-        adm_title: "📄 Verifica AdMob",
-        adm_text: "Questo sito ospita il file app-ads.txt per le mie app mobili."
-      }
-    }
+        <section>
+            <h2 id="adm_title"></h2>
+            <p id="adm_text"></p>
+            <p><a href="/app-ads.txt">app-ads.txt</a></p>
+        </section>
+    </main>
 
-    const t = texts[lang] || texts["es"];
-    for (const id in t) {
-      const el = document.getElementById(id);
-      if (el) el.textContent = t[id];
-    }
-  </script>
+    <footer>
+        &copy; 2025 Santiago Luis Fina.
+    </footer>
+
+    <script>
+        const lang = navigator.language.slice(0, 2);
+        const texts = {
+            es: {
+                nombre: "Santiago Luis Fina",
+                descripcion: "Desarrollador independiente de apps móviles",
+                apps_title: "📱 Apps destacadas",
+                play_link: "Ver en Google Play",
+                contacto_title: "🔗 Contacto y redes",
+                adm_title: "📄 Verificación AdMob",
+                adm_text: "Este sitio aloja el archivo app-ads.txt para mis apps móviles."
+            },
+            en: {
+                nombre: "Santiago Luis Fina",
+                descripcion: "Independent mobile app developer",
+                apps_title: "📱 Featured apps",
+                play_link: "View on Google Play",
+                contacto_title: "🔗 Contact & socials",
+                adm_title: "📄 AdMob verification",
+                adm_text: "This site hosts the app-ads.txt file for my mobile apps."
+            },
+            it: {
+                nombre: "Santiago Luis Fina",
+                descripcion: "Sviluppatore indipendente di app mobili",
+                apps_title: "📱 App in evidenza",
+                play_link: "Vedi su Google Play",
+                contacto_title: "🔗 Contatti e social",
+                adm_title: "📄 Verifica AdMob",
+                adm_text: "Questo sito ospita il file app-ads.txt per le mie app mobili."
+            }
+        }
+
+        const t = texts[lang] || texts["es"];
+        for (const id in t) {
+            const el = document.getElementById(id);
+            if (el) el.textContent = t[id];
+        }
+    </script>
 </body>
+
 </html>
